@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component 1`] = `
+<div>
+  <div
+    class="css-fm7ljw"
+  >
+    <a
+      class="css-1h5x3dy"
+      data-testid="show-product-details"
+    >
+      <div
+        class="css-lx9y6m"
+      >
+        <span
+          class="css-1ijmt3n"
+          data-testid="product-tag"
+        >
+          sale
+        </span>
+      </div>
+      <div
+        class="css-1q43t41"
+      >
+        <h4
+          class="css-39fqji"
+          data-testid="product-name"
+        >
+          Prohibition Liquor Company
+        </h4>
+        <div
+          class="css-10dpuw1"
+        >
+          Prohibition Christmas 500ml
+        </div>
+      </div>
+      <div
+        class="css-rjmmzf"
+      >
+        <img
+          class="css-orsq6l"
+          src="https://static.qantasloyalty.com/wine-static-assets/tablet/SPHOURKUUSAKE_1.webp"
+        />
+      </div>
+      <div
+        class="css-1q43t41"
+      >
+        <div
+          class="css-1fwy7tj"
+          data-testid="product-was-cash-price"
+        >
+          $200
+        </div>
+        <div
+          class="css-14o6v6q"
+          data-testid="product-current-cash-price"
+        >
+          $
+          119
+        </div>
+      </div>
+      <div
+        class="css-bahvbi"
+      >
+        <div
+          class="css-n6vmit"
+        >
+          <div
+            class="css-53np2w"
+          >
+            <span>
+              Or
+            </span>
+            <div
+              class="css-10x14qo"
+              data-testid="product-current-points-price"
+            >
+              15000
+               PTS
+            </div>
+          </div>
+          <div
+            class="css-1fwy7tj"
+            data-testid="product-was-points-price"
+          >
+            25000 PTS
+          </div>
+        </div>
+        <div>
+          <button
+            class="css-1anwsz4"
+            data-testid="add-to-cart-button"
+          >
+            <div>
+              <p>
+                ADD
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
