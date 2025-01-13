@@ -6,6 +6,7 @@ exports[`renders component 1`] = `
     class="css-fm7ljw"
   >
     <a
+      aria-label="click to view product details"
       class="css-1h5x3dy"
       data-testid="show-product-details"
     >
@@ -46,6 +47,7 @@ exports[`renders component 1`] = `
         class="css-1q43t41"
       >
         <div
+          aria-hidden="false"
           class="css-1fwy7tj"
           data-testid="product-was-cash-price"
         >
@@ -80,6 +82,7 @@ exports[`renders component 1`] = `
             </div>
           </div>
           <div
+            aria-hidden="false"
             class="css-1fwy7tj"
             data-testid="product-was-points-price"
           >
@@ -88,6 +91,7 @@ exports[`renders component 1`] = `
         </div>
         <div>
           <button
+            aria-label="click to add product to cart"
             class="css-1anwsz4"
             data-testid="add-to-cart-button"
           >

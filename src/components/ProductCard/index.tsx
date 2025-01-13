@@ -38,6 +38,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
     <ProductContainer>
       <ProductLink
         data-testid="show-product-details"
+        aria-label="click to view product details"
         onClick={() => showProductDetails(product)}
       >
         <ProductTagContainer>
@@ -55,7 +56,10 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           <ProductImage src={product.image} />
         </ImageContainer>
         <CashPriceContainer>
-          <WasPrice data-testid="product-was-cash-price">
+          <WasPrice
+            aria-hidden={product.wasPrice ? false : true}
+            data-testid="product-was-cash-price"
+          >
             {product.wasPrice ? `$${product.wasPrice.cashPrice.amount}` : " "}
           </WasPrice>
           <CurrentPrice
@@ -76,7 +80,10 @@ export const ProductCard = ({ product }: ProductCardProps) => {
                 {product.currentPrice.pointsPrice.amount} PTS
               </CurrentPointsPrice>
             </CurrentPointsContainer>
-            <WasPointsPrice data-testid="product-was-points-price">
+            <WasPointsPrice
+              aria-hidden={product.wasPrice ? false : true}
+              data-testid="product-was-points-price"
+            >
               {product.wasPrice
                 ? `${product.wasPrice.pointsPrice.amount} PTS`
                 : " "}
@@ -85,6 +92,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           <div>
             <AddButton
               data-testid="add-to-cart-button"
+              aria-label="click to add product to cart"
               onClick={(e) => {
                 e.stopPropagation();
                 addProductToCart(product);
