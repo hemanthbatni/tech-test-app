@@ -1,8 +1,6 @@
-import { createEvent, fireEvent, render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { productsMock } from "../../mock/mockData";
 import { ProductCard } from ".";
-import { productsMock } from "../../data/mockData";
-
-jest.spyOn(global.console, "error").mockImplementation();
 
 it("renders component", () => {
   const product = productsMock.data.search.products[0];

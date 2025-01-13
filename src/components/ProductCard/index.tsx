@@ -1,5 +1,5 @@
 import React from "react";
-import { Product } from "../ProductList/productsSlice";
+import { Product } from "../../store/productsSlice";
 import {
   CurrentPointsPrice,
   CurrentPrice,

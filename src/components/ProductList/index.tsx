@@ -8,8 +8,7 @@ import {
   fetchProducts,
   selectAllProducts,
   selectProductsStatus,
-  selectProductsError,
-} from "./productsSlice";
+} from "../../store/productsSlice";
 import { ProductCard } from "../ProductCard";
 
 export const ProductList = () => {
@@ -51,7 +50,6 @@ export const ProductList = () => {
   const dispatch = useAppDispatch();
   const products = useAppSelector(selectAllProducts);
   const produtsStatus = useAppSelector(selectProductsStatus);
-  const produtsError = useAppSelector(selectProductsError);
 
   useEffect(() => {
     if (produtsStatus === "idle") {
@@ -63,7 +61,7 @@ export const ProductList = () => {
     <div data-testid="slider-container" className="slider-container">
       <Slider {...settings}>
         {products?.map((product) => (
-          <ProductCard product={product}></ProductCard>
+          <ProductCard key={product.id} product={product}></ProductCard>
         ))}
       </Slider>
     </div>

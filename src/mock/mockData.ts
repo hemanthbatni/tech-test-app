@@ -1,4 +1,4 @@
-import { Product } from "../components/ProductList/productsSlice";
+import { Product } from "../store/productsSlice";
 
 interface ProductsResponse {
   data: {
@@ -15,6 +15,7 @@ export const productsMock: ProductsResponse = {
       total: 4,
       products: [
         {
+          id: "product-id-1",
           name: "Prohibition Liquor Company",
           description: "Prohibition Christmas 500ml",
           image:
@@ -40,6 +41,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-2",
           name: "Houraisen",
           description: "Houraisen Beshi Tokubetsu Junmai Sake 720ml",
           image:
@@ -65,6 +67,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-3",
           name: "Royal Salute",
           description:
             "Royal Salute 21 Year Old Blended Scotch Whisky Miami Polo Edition 700ml (Gift Box)",
@@ -82,6 +85,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-4",
           name: "Aberlour",
           description:
             "Aberlour 16 Year Old Double Cask Single Malt Scotch Whisky 700ml (Gift Tube)",
@@ -99,6 +103,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-5",
           name: "Prohibition Liquor Company",
           description: "Prohibition Christmas 500ml",
           image:
@@ -124,6 +129,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-6",
           name: "Houraisen",
           description: "Houraisen Beshi Tokubetsu Junmai Sake 720ml",
           image:
@@ -149,6 +155,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-7",
           name: "Royal Salute",
           description:
             "Royal Salute 21 Year Old Blended Scotch Whisky Miami Polo Edition 700ml (Gift Box)",
@@ -166,6 +173,7 @@ export const productsMock: ProductsResponse = {
           },
         },
         {
+          id: "product-id-8",
           name: "Aberlour",
           description:
             "Aberlour 16 Year Old Double Cask Single Malt Scotch Whisky 700ml (Gift Tube)",

@@ -1,10 +1,11 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import type { RootState } from "../../app/store";
-import { createAppAsyncThunk } from "../../app/withTypes";
-import { productsMock } from "../../data/mockData";
+import { createSlice } from "@reduxjs/toolkit";
+import type { RootState } from "../app/store";
+import { createAppAsyncThunk } from "../app/withTypes";
+import { productsMock } from "../mock/mockData";
 
 // Define a type for the slice state
 export interface Product {
+  id: string;
   name: string;
   description: string;
   image: string;
@@ -29,7 +30,7 @@ export interface Product {
   };
 }
 
-interface ProductsState {
+export interface ProductsState {
   products: Product[];
   status: "idle" | "pending" | "succeeded" | "rejected";
   error: string | null;

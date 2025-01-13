@@ -1,16 +1,17 @@
-import { createEvent, fireEvent, render, screen } from "@testing-library/react";
-import { Layout } from ".";
+import { configureStore } from "@reduxjs/toolkit";
+import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
-import configureStore from "redux-mock-store";
-
-jest.spyOn(global.console, "error").mockImplementation();
+import productsReducer from "../../store/productsSlice";
+import { Layout } from ".";
 
 it("renders component", () => {
-  const initialState = { products: [] };
-  const mockStore = configureStore();
-  const store = mockStore(initialState);
+  const mockStore = configureStore({
+    reducer: {
+      products: productsReducer,
+    },
+  });
   const { container, getByTestId } = render(
-    <Provider store={store}>
+    <Provider store={mockStore}>
       <Layout />
     </Provider>
   );
